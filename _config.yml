@@ -1,1 +1,4 @@
-theme: cayman
+title: "Amir Ranjbar"
+description: "Bridging AI & Software - Scalable, Efficient Solutions"
+theme: jekyll-theme-cayman
+show_downloads: false # Hide unnecessary GitHub download button
