@@ -3,8 +3,19 @@ layout: default
 title: "Contact"
 ---
 
-📩 **Email:** your-email@example.com  
-🔗 **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)  
-💻 **GitHub:** [github.com/your-github-username](https://github.com/your-github-username)  
+<style>
+.btn {
+    display: none !important;
+}
+</style>
+
+[🏠 Home](./) | [📖 About](./about) | [💼 Experience](./experience) | [🚀 Projects](./projects) | [📬 Contact](./contacts)
+
+
+📩 **Email:** iamirranjbar@gmail.com
+🔗 **LinkedIn:** [in/iamiranjbar](https://linkedin.com/in/iamiranjbar)  
+💻 **GitHub:** [iamiranjbar](https://github.com/iamiranjbar)  
 
 💡 **Let's connect and discuss AI & software solutions!**  
+
+---

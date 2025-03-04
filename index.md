@@ -1,17 +1,23 @@
 ---
 layout: default
-title: "Welcome to My Portfolio"
+title: "Amir Ranjbar"
 ---
+<style>
+.btn {
+    display: none !important;
+}
+</style>
 
-# Hi, I'm Amir Ranjbar 👋  
-### Al Project Manager & Consultant | Software Engineering Executive | Problem Solver | Innovator  
+[🏠 Home](./) | [📖 About](./about) | [💼 Experience](./experience) | [🚀 Projects](./projects) | [📬 Contact](./contacts)
 
-🚀 I specialize in AI-driven solutions, backend development, and scalable cloud architectures.  
-💡 Passionate about building high-performance, real-world AI & software systems.
+<!-- # Hi, I'm Amir Ranjbar 👋   -->
+### AI Project Manager & Consultant | Software Engineering Executive | Innovator  
 
-### 📌 **Key Highlights**  
-✅ **Master’s in AI**, University of Tehran  
-✅ **Optimized AI-based systems** (Fakir Tech, Safe Service, Balad Maps)  
-✅ **10+ Successful AI & Software Projects**  
+🚀 I lead a team specializing in **AI-driven and software solutions**, seamlessly integrating **AI research, backend development, and scalable cloud architectures**. Our expertise spans **AI model optimization, microservices, and full-stack development**, delivering end-to-end solutions from idea to deployment.
 
-[📂 View My Projects](./projects)
+### 📌 Key Highlights
+✅ Master’s in AI, **University of Tehran**  
+✅ Expertise in **AI model optimization** and cloud-based deployments  
+✅ Led AI and software teams to deliver **scalable solutions**  
+✅ Developed AI-powered systems for **Safe Service, Fakir Tech, and Balad Maps**  
+✅ Conducted research in **AI, Hyperdimensional Computing, and computational models**  
