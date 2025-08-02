@@ -1,0 +1,235 @@
+:root {
+    --primary-font: 'Lato', sans-serif;
+    --heading-font: 'Merriweather', serif;
+}
+
+body, p {
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.75em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+/* ...rest of the styles remain unchanged... */
+
+header, footer {
+    background-color: #dff7f7;
+    /* background-color: var(--primary-bg-color); */
+    color: var(--primary-text-color);
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Adjust padding or height if needed to ensure adequate vertical space */
+    padding: 2em 0; 
+}
+
+
+nav ul {
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #dff7f7;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    background-color: var(--primary-text-color);
+    color: var(--primary-bg-color);
+    border-bottom: 2px solid var(--active-color);
+}
+
+section {
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.img-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center; /* Centers the image horizontally */
+}
+
+.section-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* For even-numbered sections, swap the content and image positions */
+section:nth-child(even) {
+    flex-direction: row-reverse;
+    background-color: #dff7f7;
+}
+
+.two-column-list {
+    column-count: 2;
+    padding: 0;
+    list-style-type: disc; /* You can change the bullet point style here */
+}
+
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+}
+li {
+    margin-bottom: 10px; /* Add some space between list items */
+}
+.university {
+    font-weight: bold;
+}
+.degree {
+    display: block;
+    margin-left: 15px;
+}
+.gpa {
+    display: block;
+    margin-left: 15px;
+    font-style: italic; /* Optional: style the GPA line differently */
+}
+
+.content {
+    width: 70%;
+    margin: auto;
+}
+.experience {
+    margin-bottom: 20px;
+}
+.experience h3 {
+    color: #2C3E50;
+    margin-bottom: 5px;
+}
+.role {
+    font-weight: bold;
+    color: #E74C3C;
+}
+.description {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.degree {
+    font-weight: bold;
+    color: #E74C3C;
+}
+.gpa {
+    color: #3498DB;
+}
+
+a {
+    color: #3498DB;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.red-text {
+    color: #E74C3C;
+}
+
+.blue-text {
+    color: #3498DB;
+}
+
+.dark-text {
+    color: #2C3E50;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .img-responsive {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    /* If you want to always show the image above the text on mobile, regardless of it being an even or even section */
+    section:nth-child(even) {
+        flex-direction: column;
+    }
+}

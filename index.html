@@ -1,0 +1,766 @@
+<!-- TODO:
+- Add background for header 
+- Change color to persian blue
+-->
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amir Ranjbar's CV</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+          opacity: 1 !important;
+          transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+    <style>
+      .cc-experience-header, .cc-education-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Cover the full height */
+        background-color: #f8f9fa;
+        border-right: 5px solid #007144; /* Green bar */
+        text-align: center;
+      }
+
+      .cc-experience-header img, .cc-education-header img {
+        width: 50%; /* Adjust the logo size */
+        height: auto;
+      }
+
+      .cc-experience .row, .cc-education .row {
+        display: flex;
+        align-items: stretch;
+      }
+
+      .col-md-3 {
+        display: flex;
+        align-items: center; /* Vertically center the logo */
+        background-color: #007144; /* Green background */
+        padding: 0;
+        border-right: 5px solid #007144; /* Ensures the green bar is consistent across the height */
+      }
+
+      .col-md-9 {
+        padding-left: 30px;
+        background-color: #ffffff; /* White background */
+      }
+
+      .cc-reference .row {
+        margin-bottom: 30px;
+      }
+
+      .cc-reference .card {
+        background: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .cc-reference img {
+        width: 150px;
+        height: auto;
+        margin-bottom: 15px;
+      }
+
+      .cc-reference .col-lg-6 {
+        margin-bottom: 20px;
+      }
+      
+      .tab-content .row {
+        justify-content: center;
+      }
+
+      .cc-porfolio-image {
+        margin-bottom: 30px;
+      }
+
+      .cc-porfolio-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .cc-porfolio-image figcaption {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      /* Certificates Section Styling similar to Honors */
+      .cc-certificates .card {
+        background: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .cc-certificates img {
+        width: 150px;
+        height: auto;
+        margin-bottom: 15px;
+      }
+
+      .cc-certificates .h5 {
+        font-size: 1.25rem;
+        margin-top: 15px;
+        margin-bottom: 10px;
+      }
+
+      .cc-certificates p {
+        color: #666;
+      }
+      .card .card-body + .card-body {
+        margin-top: -30px; /* Negative margin to pull elements closer together */
+      }
+    </style>
+  </head>
+  <body id="top">
+    <header>
+      <div class="profile-page sidebar-collapse">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+          <div class="container">
+            <div class="navbar-translate">
+              <a class="navbar-brand" href="#" rel="tooltip">Amir Ranjbar</a>
+              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a></li>
+                <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#combined">Pictures</a></li> -->
+                <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#publications">Publications</a></li> -->
+                <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#certificates">Certificates</a></li> -->
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#awards">Awards</a></li>
+                <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#reference">References</a></li> -->
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="page-content">
+      <div>
+        <div class="profile-page">
+          <div class="wrapper">
+            <div class="page-header page-header-small" filter-color="green">
+              <div class="page-header-image" data-parallax="true" style="background-image: url('images/ethglobal.jpg')"></div>
+              <div class="container">
+                <div class="content-center">
+                  <div class="cc-profile-image"><a href="#"><img src="images/profile.jpeg" alt="Amir Ranjbar's Profile Picture"/></a></div>
+                  <div class="h2 title">Amir Ranjbar</div>
+                  <p class="category text-white">Senior Software Engineer at Fakir Technology Consultants GmbH</p>
+                  <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contact Me</a>
+                </div>
+              </div>
+              <div class="section">
+                <div class="container">
+                  <div class="button-container">
+                    <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/iamiranjbar/" rel="tooltip" title="Follow me on LinkedIn">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                      <a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/iamiranjbar" rel="tooltip" title="Follow me on GitHub">
+                      <i class="fa fa-github"></i>
+                    </a>
+                    <a class="btn btn-default btn-round btn-lg btn-icon" href="mailto:iamirranjbar@gmail.com" rel="tooltip" title="Email me">
+                      <i class="fa fa-envelope"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="about">
+          <div class="container">
+            <div class="card" data-aos="fade-up" data-aos-offset="10">
+              <div class="row">
+                <div class="col-lg-6 col-md-12">
+                  <div class="card-body">
+                    <div class="h4 mt-0 title">About</div>
+                    <p>Hello! I am Amir Ranjbar, a Senior Software Engineer at Fakir Technology Consultants GmbH, based in Berlin, Germany. I specialize in building scalable microservices and optimizing performance-critical systems with expertise in Python, Django, JavaScript, and NestJS.</p>
+                    <p>I hold a Master's degree in Artificial Intelligence from the University of Tehran, where I graduated with a grade of 19.77/20. With over 5 years of experience, I've worked on various projects involving PostgreSQL, Redis, Docker, and RabbitMQ, applying my strong foundation in AI, data processing, and distributed systems to solve real-world engineering challenges.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="card-body">
+                    <div class="h4 mt-0 title">Basic Information</div>
+                    <div class="row">
+                      <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+                      <div class="col-sm-8">iamirranjbar@gmail.com</div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-sm-4"><strong class="text-uppercase">Location:</strong></div>
+                      <div class="col-sm-8">Tehran, Tehran, Iran</div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-sm-4"><strong class="text-uppercase">LinkedIn:</strong></div>
+                      <div class="col-sm-8"><a href="https://www.linkedin.com/in/iamiranjbar/">@iamiranjbar</a></div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-sm-4"><strong class="text-uppercase">GitHub:</strong></div>
+                      <div class="col-sm-8"><a href="https://github.com/iamiranjbar">@iamiranjbar</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="experience">
+          <div class="container cc-experience">
+            <div class="h4 text-center mb-4 title">Experience</div>
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-experience-header">
+                    <img src="images/fakir-logo.png" alt="Fakir Logo">
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Senior Software Engineer</div>
+                    <p>May 2024 – Present | Fakir Technology Consultants GmbH | Berlin, Germany</p>
+                    <p>Backend Architecture: Designed Redis caching with TTL segmentation and pub/sub persistence to reduce API latency by 20% and cut deployment-related downtime by 35%.</p>
+                    <p>Scalability & Reliability: Owned and scaled 20+ PostgreSQL-backed RESTful APIs with RabbitMQ messaging, maintaining 99.9% uptime in production.</p>
+                    <p>Distributed Systems: Integrated RabbitMQ across 5 microservices to decouple workflows, enabling real-time processing and reducing inter-service latency by 15%.</p>
+                    <p>Team Collaboration: Drove a 20% acceleration in Agile sprints through sprint planning, code reviews, and mentorship within cross-functional teams.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-experience-header">
+                    <img src="images/safeservice-logo.png" alt="SafeService Logo">
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Team Lead (Contract)</div>
+                    <p>Mar 2023 – May 2024 | Safe Service | Tehran, Iran</p>
+                    <p>Platform Modernization: Led a backend team of 5 developers through system refactoring and Agile planning, accelerating the product roadmap by 25%.</p>
+                    <p>API Performance: Rebuilt core backend services using FastAPI and PostgreSQL, reducing average API response times by 30% through schema optimization and query tuning.</p>
+                    <p>Team Leadership: Directed sprint planning, facilitated peer reviews, and ensured delivery of reliable, maintainable code in a fast-paced environment.</p>
+                    <p>Stakeholder Alignment: Bridged communication between developers and product owners to align technical decisions with business goals, improving delivery speed and user satisfaction.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-experience-header">
+                    <img src="images/uci-logo.png" alt="University of California, Irvine Logo">
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Research Associate</div>
+                    <p>Oct 2021 – Mar 2023 | University of California, Irvine | Remote</p>
+                    <p>Model Optimization: Built distributed training pipelines using PyTorch and Hyperdimensional Computing (HDC), achieving 2.4× speedup over MLP baselines.</p>
+                    <p>Robust AI: Enhanced noise robustness by 15% through neurosymbolic modeling and benchmarking under input corruption scenarios.</p>
+                    <p>Deployment Efficiency: Applied low-bit quantization and fault-tolerant checkpointing to support deployment on resource-constrained hardware.</p>
+                    <p>Research Collaboration: Worked with the BIAS Lab on neurosymbolic AI, contributing to model stability, robustness, and training efficiency.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-experience-header">
+                    <img src="images/balad-logo.png" alt="Balad Logo">
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Software Engineer</div>
+                    <p>Feb 2020 – Oct 2021 | Balad Maps | Tehran, Iran</p>
+                    <p>Navigation Systems: Re-architected microservices with Go and gRPC, reducing system latency from 450ms to 300ms and improving system maintainability.</p>
+                    <p>Algorithm Design: Developed routing algorithms that improved public transit and pedestrian navigation efficiency by 30%.</p>
+                    <p>Scalability & Reliability: Scaled and maintained navigation infrastructure serving 11M+ users with high availability.</p>
+                    <p>Feature Development: Delivered real-time public transit features and user-generated content systems, increasing community contributions by 20%.</p>
+                    <p>Infrastructure: Revamped CI/CD pipelines, reducing manual deployment failures by 40% and post-release bugs by 30%.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-experience-header">
+                    <img src="images/bazaar-logo.jpeg" alt="Bazaar Logo">
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Software Engineer</div>
+                    <p>Aug 2019 – Feb 2020 | Cafe Bazaar | Tehran, Iran</p>
+                    <p>Platform Development: Designed and deployed a human resource management system from the ground up, cutting HR processing time by 40%.</p>
+                    <p>Backend Optimization: Refactored backend logic and optimized PostgreSQL queries to reduce system response time by 33%.</p>
+                    <p>Scalable Architecture: Integrated Dockerized microservices to streamline deployment and simplify system maintenance.</p>
+                    <p>Cross-functional Collaboration: Worked across 3 departments to align technical solutions with business needs and boost user satisfaction by 20% post-launch.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-experience-header">
+                    <img src="images/lamasoo-logo.png" alt="Lamasoo Logo">
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Software Engineer</div>
+                    <p>Jul 2018 – Aug 2019 | Lamasoo | Tehran, Iran</p>
+                    <p>System Reliability: Integrated advanced booking workflows, achieving 99.95% availability and supporting 500+ concurrent hotel reservations.</p>
+                    <p>Backend Development: Engineered backend services in Node.js, improving query performance by 25% on high-traffic, data-intensive endpoints.</p>
+                    <p>Data Optimization: Refactored MongoDB data models and tuned queries to enhance retrieval speed and user experience.</p>
+                    <p>CI/CD Automation: Built GitHub-based pipelines with automated testing and versioned rollouts, reducing deployment errors and accelerating releases.</p>
+                    <p>Agile Execution: Led sprint planning and cross-functional collaboration to deliver scalable, user-driven features with high maintainability.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section" id="skills">
+          <div class="container">
+            <div class="h4 text-center mb-4 title">Top Skills</div>
+            <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <div class="card-body">
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary"><span class="progress-badge">Python</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div><span class="progress-value"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary"><span class="progress-badge">Go</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div><span class="progress-value"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary"><span class="progress-badge">APIs, Databases & Caching</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div><span class="progress-value"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary"><span class="progress-badge">Distributed Systems</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div><span class="progress-value"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary"><span class="progress-badge">Event-Driven & Microservice Architecture</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div><span class="progress-value"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary"><span class="progress-badge">Docker & Kubernetes</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div><span class="progress-value"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary"><span class="progress-badge">PyTorch</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="progress-container progress-primary"><span class="progress-badge">Model Optimization & Deployment</span>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div><span class="progress-value"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" id="education">
+          <div class="container cc-education">
+            <div class="h4 text-center mb-4 title">Education</div>
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-education-header">
+                    <img src="images/ut-logo.png" alt="University of Tehran Logo">
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Master of Science, Artificial Intelligence and Robotics</div>
+                    <p>Sep 2020 – Feb 2023 | University of Tehran | Tehran, Iran</p>
+                    <p>Thesis: Modeling and improving users' reading habits using Goodreads data.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="row">
+                <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body cc-education-header">
+                    <img src="images/ut-logo.png" alt="University of Tehran Logo">
+                  </div>
+                </div>
+                <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body">
+                    <div class="h5">Bachelor of Science, Computer Engineering</div>
+                    <p>Sep 2016 – Sep 2020 | University of Tehran | Tehran, Iran</p>
+                    <p>Thesis: Predicting review helpfulness to improve cold-start performance in recommendation systems.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="section" id="combined">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 ml-auto mr-auto">
+                <div class="h4 text-center mb-4 title">Pictures</div>
+                <div class="nav-align-center">
+                  <ul class="nav nav-pills nav-pills-primary" role="tablist">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#combined" role="tablist"><i class="fa fa-th" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content gallery mt-5">
+              <div class="tab-pane active" id="combined">
+                <div class="ml-auto mr-auto">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <a href="#blockchain">
+                          <figure class="cc-effect">
+                            <img src="images/ethglobal.jpg" alt="Smarter Contract"/>
+                            <figcaption>
+                              <div class="h4">Smarter Contract</div>
+                              <p>Optimizes smart contract performance by delegating functions to cost-efficient blockchains in real-time.</p>
+                            </figcaption>
+                          </figure>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <a href="#blockchain">
+                          <figure class="cc-effect">
+                            <img src="images/hackathon-pic.jpg" alt="Glue"/>
+                            <figcaption>
+                              <div class="h4">Glue</div>
+                              <p>Simplifies the management of dApp smart contracts across various chains.</p>
+                            </figcaption>
+                          </figure>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-4">
+                    <div class="col-md-6">
+                      <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <a href="#hackathons">
+                          <figure class="cc-effect">
+                            <img src="images/eth-team.jpg" alt="ETHGlobal Waterloo"/>
+                            <figcaption>
+                              <div class="h4">ETHGlobal Waterloo 2023</div>
+                              <p>Finalist in ETHGlobal Waterloo 2023, project: Smarter Contract.</p>
+                            </figcaption>
+                          </figure>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                        <a href="#hackathons">
+                          <figure class="cc-effect">
+                            <img src="images/eth-global-team.jpg" alt="Best Usecase of Hyperlane"/>
+                            <figcaption>
+                              <div class="h4">Best Usecase of Hyperlane</div>
+                              <p>Winner for Best Usecase of Hyperlane, project: Smarter Contract.</p>
+                            </figcaption>
+                          </figure>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="section" id="publications">
+          <div class="container">
+            <div class="h4 text-center mb-4 title">Publications</div>
+            <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="h5">Snapshotting Mechanisms for Persistent Memory-Mapped Files</div>
+                    <p>Published in ApPLIED@PODC 2024. <a href="https://doi.org/10.1145/3663338.3665832">DOI: 10.1145/3663338.3665832</a></p>
+                    <p>Investigates ways to enhance the reliability of persistent memory systems, focusing on snapshotting mechanisms and their role in system resilience. Introduces new snapshotting consistency models and mechanisms to improve performance and enhance system responsiveness. Provides experimental analysis demonstrating throughput and latency improvements.</p>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="h5">A Closer Look at Detectable Objects for Persistent Memory</div>
+                    <p>Published in ApPLIED@PODC 2022. <a href="https://doi.org/10.1145/3524053.3542749">DOI: 10.1145/3524053.3542749</a></p>
+                    <p>Explores the adaptation of multi-core algorithms to persistent memory, introducing the "Unified Detectable Sequential Specification" (UDSS), which simplifies interfaces and coding. Experiments conducted using Intel Optane memory demonstrate the performance implications of the implementation.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="section" id="certificates">
+          <div class="container cc-certificates">
+            <div class="h4 mb-4 text-center title">Certificates</div>
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="card" data-aos="zoom-in">
+                  <img src="images/waterloo-logo.png" alt="University of Waterloo Logo">
+                  <div class="h5 pt-2">ExpecTAtions Teaching Assistant Workshop</div>
+                  <p>Issued by University of Waterloo in Oct 2021</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="card" data-aos="zoom-in">
+                  <img src="images/ieee-tehran-logo.png" alt="IEEE University of Tehran Student Branch Logo">
+                  <div class="h5 pt-2">IEEE Data Science Winter School as Machine Learning Instructor</div>
+                  <p>Issued by IEEE University of Tehran Student Branch in Jan 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="card" data-aos="zoom-in">
+                  <img src="images/ieee-tehran-logo.png" alt="IEEE University of Tehran Student Branch Logo">
+                  <div class="h5 pt-2">IEEE Data Science Winter School as Statistical Inference Instructor</div>
+                  <p>Issued by IEEE University of Tehran Student Branch in Jan 2020</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="card" data-aos="zoom-in">
+                  <img src="images/ut-logo.png" alt="University of Tehran Logo">
+                  <div class="h5 pt-2">Workshop on Teaching Assistant Training</div>
+                  <p>Issued by University of Tehran in Apr 2019</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="section" id="awards">
+          <div class="container cc-certificates">
+            <div class="h4 mb-4 text-center title">Honors and Awards</div>
+        
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="card" data-aos="zoom-in">
+                  <img src="images/ut-logo.png" alt="University of Tehran Logo">
+                  <div class="h5 pt-2">Ranked 1st out of 60 Students</div>
+                  <p>Issued by University of Tehran in Jan 2023.</p>
+                  <p>Graduated top of class in M.Sc. Artificial Intelligence and Robotics.</p>
+                </div>
+              </div>
+        
+              <div class="col-lg-6 col-md-12">
+                <div class="card" data-aos="zoom-in">
+                  <img src="images/ut-logo.png" alt="University of Tehran Logo">
+                  <div class="h5 pt-2">Ranked 5th out of 100 Students</div>
+                  <p>Issued by University of Tehran in Jan 2020.</p>
+                  <p>Graduated in top 5% of B.Sc. Computer Engineering program.</p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="card" data-aos="zoom-in">
+                  <img src="images/ut-logo.png" alt="University of Tehran Logo">
+                  <div class="h5 pt-2">6th Place – 24th National Computer Engineering Olympiad</div>
+                  <p>Issued by Ministry of Science, Research and Technology in Jan 2019.</p>
+                  <p>Ranked 6th among 500 top-performing computer engineering students nationwide.</p>
+                </div>
+              </div>
+        
+              <div class="col-lg-6 col-md-12">
+                <div class="card" data-aos="zoom-in">
+                  <img src="images/sanjesh_logo.png" alt="Iran National Exam Logo">
+                  <div class="h5 pt-2">Ranked 413 out of 100,000+</div>
+                  <p>Issued by National Education Evaluation Organization in Sep 2016.</p>
+                  <p>Achieved top percentile in Iran’s National University Entrance Exam for Engineering.</p>
+                </div>
+              </div>
+            </div>
+        
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="card" data-aos="zoom-in">
+                  <img src="images/bmn-logo.png" alt="National Elites Foundation Logo">
+                  <div class="h5 pt-2">Member of National Elites Foundation</div>
+                  <p>Issued by National Elites Foundation, Iran in Jan 2017.</p>
+                  <p>Recognized for academic excellence and national-level competition results.</p>
+                </div>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+        
+        <!-- <div class="section" id="reference">
+          <div class="container cc-reference">
+            <div class="h4 mb-4 text-center title">References</div>
+            <div class="card">
+              <div id="cc-Indicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#cc-Indicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#cc-Indicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                        <div class="card-body">
+                          <div class="h5">Danial Maleki</div>
+                          <p>Machine Learning Engineer | Software Engineer | PhD</p>
+                          <p>Mohammad and I crossed paths when we both arrived in Waterloo and from our first interaction, I knew he was a special individual. His warm and engaging personality immediately puts everyone at ease, creating an atmosphere of camaraderie and genuine connection.</p>
+                          <p>One aspect that continuously leaves me in awe is Mohammad's passion and expertise in the field of research. His deep understanding of complex problems and ability to articulate insightful ideas truly set him apart. Our discussions on various research topics have been nothing short of intellectually stimulating, and I am constantly impressed by the depth of his knowledge.</p>
+                          <p>In conclusion, I am confident that Mohammad's contributions will prove invaluable to any team fortunate enough to have him. If you need any additional information or have any questions about Mohammad's qualifications, please do not hesitate to reach out.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                        <div class="card-body cc-experience-header">
+                          <img src="images/danial.jpeg" alt="Danial Maleki" class="rounded-circle" style="width: 100%; height: auto; object-fit: cover;" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                        <div class="card-body">
+                          <div class="h5">Chien-Chih (Joseph) Chen</div>
+                          <p>Web 3 Researcher | PhD Candidate in Blockchain @UWaterloo</p>
+                          <p>In today's fast-paced technology landscape, it's a rare privilege to work with professionals who excel not only in their core domain but also display an unparalleled passion for learning and innovation. Mohammad is one such gem.</p>
+                          <p>Mohammad really knows his stuff when it comes to Persistent Memory. He doesn't just skim the surface; he gets deep into the details and always makes sure he's following the best guidelines. He has a knack for making complicated things about Persistent Memory clear and easy to understand. On top of that, his skills in C++ are amazing. Many of us, myself included, have learned a lot from him and appreciate how he makes tough topics simpler.</p>
+                          <p>Outside of these areas, Mohammad’s enthusiasm for blockchain technology sets him apart. Participating in multiple hackathons, he hasn’t just showcased his skills, but he's clinched victories. These achievements aren’t just a testament to his individual prowess, but they also speak volumes about his ability to collaborate, innovate, and lead teams towards a common goal.</p>
+                          <p>In conclusion, having the pleasure to work alongside Mohammad has been one of the most enriching experiences of my professional journey. His blend of expertise, enthusiasm, and empathy makes him an invaluable asset to any team. I genuinely look forward to witnessing the continued trajectory of his success and breakthroughs in the future. Mohammad's potential knows no bounds, and his future is luminous.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-3" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                        <div class="card-body cc-experience-header">
+                          <img src="images/joseph.jpeg" alt="Chien-Chih (Joseph) Chen" class="rounded-circle" style="width: 100%; height: auto; object-fit: cover;" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#cc-Indicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#cc-Indicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        
+        <div class="section" id="contact">
+          <div class="cc-contact-information" style="background-image: url('images/tehran-staticmap.png')">
+            <div class="container">
+              <div class="cc-contact">
+                <div class="row">
+                  <div class="col-md-9">
+                    <div class="card mb-0" data-aos="zoom-in">
+                      <div class="h4 text-center title">Contact Me</div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="card-body">
+                            <p class="mb-0"><strong>Email</strong></p>
+                            <p><a href="mailto:iamirranjbar@gmail.com">iamirranjbar@gmail.com</a></p></p>
+                            <p class="mb-0"><strong>LinkedIn</strong></p>
+                            <p><a href="https://www.linkedin.com/in/iamiranjbar">www.linkedin.com/in/iamiranjbar</a></p>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card-body">
+                            <p class="mb-0"><strong>Location</strong></p>
+                            <p>Tehran, Tehran, Iran</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container text-center"><a class="cc-facebook btn btn-link" href="https://www.linkedin.com/in/iamiranjbar/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></div>
+      <div class="h4 title text-center">Amir Ranjbar</div>
+      <div class="text-center text-muted">
+        <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+      </div>
+    </footer>
+    <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
+    <script src="js/core/popper.min.js?ver=1.1.0"></script>
+    <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
+    <script src="js/now-ui-kit.js?ver=1.1.0"></script>
+    <script src="js/aos.js?ver=1.1.0"></script>
+    <script src="scripts/main.js?ver=1.1.0"></script>
+  </body>
+</html>
